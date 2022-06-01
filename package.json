@@ -1,0 +1,25 @@
+{
+  "name": "my-gql-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && babel-watch ./src/index.js",
+    "clean": "rm -rf ./node_modules/.cache/babel-loader"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/runtime": "^7.18.3",
+    "babel-plugin-import-graphql": "^2.8.1",
+    "babel-preset-latest-node": "^5.5.1",
+    "babel-watch": "^7.7.0"
+  },
+  "dependencies": {
+    "apollo-server": "^3.8.1"
+  }
+}

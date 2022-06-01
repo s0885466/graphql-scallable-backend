@@ -1,0 +1,23 @@
+type Review {
+    id: ID!
+    title: String!
+    content: String!
+    author: ID!
+    product: ID!
+}
+
+input ReviewInput {
+    title: String!
+    content: String!
+    author: ID!
+    product: ID!
+}
+
+type Query {
+    allReviews: [Review]
+    getAllReviewsByProduct(productId: ID!): [Review!]!
+}
+
+type Mutation {
+    createReview(reviewInput: ReviewInput!): Review
+}
